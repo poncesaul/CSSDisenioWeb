@@ -1,0 +1,237 @@
+@media screen{
+    body{
+      margin:0;
+      padding:0;
+      font-family: "Dancing Script",Helvetica;
+      color: #FFF;
+      background: #02010a;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    p{
+      margin: 0 0 1.5em 0;
+    }
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+
+    #main-header{
+      background: #5b7989;
+      color:white;
+      height: 80px;
+    }
+
+    #main-header a{
+      color:white;
+    }
+
+    #logo-header {
+    	float: left;
+    	padding: 15px 0 0 20px;
+    	text-decoration: none;
+    }
+    	#logo-header:hover {
+    		color: #0b76a6;
+    	}
+
+    	#logo-header .site-name {
+    		display: block;
+    		font-weight: 700;
+    		font-size: 1.2em;
+    	}
+
+    	#logo-header .site-desc {
+    		display: block;
+    		font-weight: 300;
+    		font-size: 0.8em;
+    		color: #999;
+    	}
+
+    nav{
+      float:right;
+    }
+    nav ul{
+      margin: 0;
+      padding:0;
+      list-style=none;
+      padding-right: 20px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+    }
+    nav ul li a{
+      display: block;
+      padding: 0 10px;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover{
+      background: #0b76a6;
+    }
+
+    #main-content{
+      background: white;
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,1);
+    }
+      #main-content header,
+      #main-conent .contentido{
+        padding: 40px;
+      }
+
+    #main-footer {
+      	background: #C6d5c5;
+      	color: black;
+      	text-align: center;
+      	padding: 20px;
+      	margin-top: 40px;
+        display: flex;
+    }
+
+    #fc{
+      width:25%;
+    }
+
+    #main-footer p {
+      margin: 0;
+    }
+
+    #main-footer a {
+      color: black;
+    }
+
+    .fila0{
+      background: #82c3a6;
+      display: block;
+      text-align: center;
+    }
+    .fila1{
+      background:  #d5c75f;
+      width: 100%;
+      magin:0 auto;
+      text-align: center;
+    }
+
+    .caja1, .caja2{
+      display: inline-block;
+      width: 45%;
+      margin 10vh o;
+    }
+
+    .caja11, .caja22, .caja33{
+      display: inline-block;
+      width: 30%;
+      margin 10vh o;
+    }
+
+    img.grande{
+      width: 600px;
+      height: 350px;
+    }
+
+    img.mediana{
+      width: 300px;
+      height: 200px;
+    }
+
+    img.pequenia1{
+      width: 350px;
+      height: 250px;
+      filter: blur(6px);
+    }
+
+    img.pequenia2{
+      width: 350px;
+      height: 250px;
+      filter: grayscale(100%);
+    }
+
+    img.pequenia3{
+      width: 350px;
+      height: 250px;
+      filter: sepia(90%);
+    }
+    
+    img.pequenia{
+      width: 350px;
+      height: 250px;
+    }
+}
+@media (max-width:400px){
+
+  #main-header{
+    background: #5b7989;
+    color:white;
+    height: 90px;
+  }
+
+  nav{
+    float:left;
+  }
+
+  .contenido{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  body{
+    margin:0;
+    padding:0;
+    font-family: "Dancing Script",Helvetica;
+    color: #FFF;
+    background: #02010a;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .fila0{
+    background: #82c3a6;
+    display: block;
+    text-align: center;
+  }
+  .fila1{
+    background:  #d5c75f;
+    display: block;
+    text-align: center;
+  }
+
+  .caja1, .caja2{
+    display: block;
+    width: 80%;
+    margin 10vh o;
+    text-align: center;
+  }
+
+  .caja11, .caja22, .caja33{
+    display: block;
+    width: 80%;
+    margin 10vh o;
+  }
+
+  img.grande{
+    width: 300px;
+    height: 200px;
+  }
+
+  img.mediana{
+    width: 300px;
+    height: 200px;
+  }
+
+  #main-footer {
+      background: #C6d5c5;
+      color: black;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+  }
+
+}

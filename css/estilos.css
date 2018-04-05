@@ -8,14 +8,17 @@
       font-size: 1em;
       line-height: 1.5em;
     }
-
     p{
       margin: 0 0 1.5em 0;
     }
-
     img{
       max-width: 100%;
       height: auto;
+    }
+
+    h3{
+      color:black;
+      text-decoration: underline;
     }
 
     #main-header{
@@ -23,33 +26,31 @@
       color:white;
       height: 80px;
     }
-
     #main-header a{
       color:white;
     }
-
     #logo-header {
     	float: left;
     	padding: 15px 0 0 20px;
     	text-decoration: none;
     }
-    	#logo-header:hover {
-    		color: #0b76a6;
-    	}
+    #logo-header:hover {
+      color: #0b76a6;
+    }
+    #logo-header .site-name {
+      display: block;
+    	font-weight: 700;
+    	font-size: 2.2em;
+      color: white;
+      text-shadow: 2px 2px #02010a;
+    }
 
-    	#logo-header .site-name {
-    		display: block;
-    		font-weight: 700;
-    		font-size: 1.2em;
-    	}
-
-    	#logo-header .site-desc {
+    #logo-header .site-desc {
     		display: block;
     		font-weight: 300;
     		font-size: 0.8em;
     		color: #999;
-    	}
-
+    }
     nav{
       float:right;
     }
@@ -68,11 +69,9 @@
       padding: 0 10px;
       text-decoration: none;
     }
-
     nav ul li a:hover{
       background: #0b76a6;
     }
-
     #main-content{
       background: white;
       width: 90%;
@@ -85,17 +84,34 @@
         padding: 40px;
       }
 
-    #main-footer {
-      	background: #C6d5c5;
+    .main-footer {
+      	background-color: #C6d5c5;
       	color: black;
       	text-align: center;
       	padding: 20px;
-      	margin-top: 40px;
+      	margin-top: 0px;
         display: flex;
+        width: 100%;
+        clear: both;
+        float: left;
     }
 
-    #fc{
+    .fcizquierda1{
       width:25%;
+      float:left;
+    }
+    .fcizquierda2{
+      width: 25%;
+      float:left;
+    }
+    .fcderecha1{
+      width: 25%;
+      float: right;
+    }
+
+    .fcderecha2{
+      width: 25%;
+      float: left;
     }
 
     #main-footer p {
@@ -115,6 +131,12 @@
       background:  #d5c75f;
       width: 100%;
       magin:0 auto;
+      text-align: center;
+    }
+
+    .fila3{
+      background:  #d5c75f;
+      display:block;
       text-align: center;
     }
 
@@ -157,10 +179,28 @@
       height: 250px;
       filter: sepia(90%);
     }
-    
+
     img.pequenia{
       width: 350px;
       height: 250px;
+    }
+
+    .caja1 img{
+      transform: : rotate(0deg);
+      transition: transform 1s;
+    }
+
+    .caja1 img:hover{
+      transform: rotate(10deg);
+    }
+
+    .caja2 img{
+      transform: : translate(0px,0px);
+      transition: transform 1s;
+    }
+
+    .caja2 img:hover{
+      transform: translate(20px,-5px);
     }
 }
 @media (max-width:400px){
@@ -168,11 +208,29 @@
   #main-header{
     background: #5b7989;
     color:white;
-    height: 90px;
+    height: 110px;
+  }
+
+  #logo-header .site-name {
+    display: block;
+    font-weight: 500;
+    font-size: 2.2em;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+
   }
 
   nav{
-    float:left;
+    float:inherit;
+
+  }
+
+  nav ul{
+    margin: 0;
+    padding:0;
+    list-style=none;
+    padding-left: 90px;
+
   }
 
   .contenido{
@@ -199,6 +257,7 @@
     background:  #d5c75f;
     display: block;
     text-align: center;
+    padding-left:40px;
   }
 
   .caja1, .caja2{
@@ -224,14 +283,13 @@
     height: 200px;
   }
 
-  #main-footer {
-      background: #C6d5c5;
+  .main-footer {
+      background-color: #C6d5c5;
       color: black;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
       display: flex;
       flex-direction: column;
+      width: 400px;
+      text-align: center;
+      padding-left:130px;
   }
-
 }
